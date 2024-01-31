@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <div>
       <Header />
+      <p>teste commit</p>
     </div>
   );
 }
