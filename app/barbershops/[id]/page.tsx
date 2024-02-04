@@ -41,6 +41,7 @@ const BarbershopDetails = async ({ params }: BarbershopDetailsProps) => {
           <ServiceItem
             key={service.id}
             service={service}
+            barbershop={barbershop}
             isAuthenticaded={!!session?.user}
           />
         ))}
