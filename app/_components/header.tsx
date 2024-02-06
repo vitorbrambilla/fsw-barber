@@ -10,25 +10,27 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <Card>
-      <CardContent className="p-5 flex items-center justify-between flex-row">
-        <Link href="/">
-          <Image src="/logo.svg" alt="FSW Barber" height={22} width={120} />
-        </Link>
+    <header>
+      <Card>
+        <CardContent className="p-5 flex items-center justify-between flex-row">
+          <Link href="/">
+            <Image src="/logo.svg" alt="FSW Barber" height={22} width={120} />
+          </Link>
 
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant="outline" size="icon">
-              <MenuIcon size={18} />
-            </Button>
-          </SheetTrigger>
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon">
+                <MenuIcon size={18} />
+              </Button>
+            </SheetTrigger>
 
-          <SheetContent className="p-0">
-            <SideMenu />
-          </SheetContent>
-        </Sheet>
-      </CardContent>
-    </Card>
+            <SheetContent className="p-0">
+              <SideMenu />
+            </SheetContent>
+          </Sheet>
+        </CardContent>
+      </Card>
+    </header>
   );
 };
 
